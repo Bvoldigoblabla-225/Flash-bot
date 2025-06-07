@@ -16,11 +16,11 @@ const conf = {
   timezone: process.env.TIME_ZONE || "Africa/Nairobi",
   PRESENCE_DM: process.env.DM_PRESENCE || "typing",
   PRESENCE_GROUP: process.env.GROUP_PRESENCE || "paused",
-  MODE: process.env.MODE || "private",
+  MODE: process.env.MODE || "public",
   AV: process.env.AV || "on",
   PREFIXES: process.env.PREFIX !== undefined 
   ? process.env.PREFIX.split(",").map(p => p.trim()) 
-  : [""], 
+  : ["@"], 
   Session: process.env.SESSION || "",
   NUMBER: process.env.OWNER_NUMBER || "",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
